@@ -1,0 +1,33 @@
+{
+	"extends": "@tsconfig/svelte/tsconfig.json",
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules/*",
+		"__sapper__/*",
+		"public/*",
+		"src/service-worker.js"
+	],
+	"compilerOptions": {
+		"target": "ESNEXT",
+		"module": "ESNEXT",
+		"allowJs": true,
+		"checkJs": false,
+		"strict": false,
+		"noImplicitAny": false,
+		"moduleResolution": "node",
+		"baseUrl": "./",
+		"paths": {},
+		"typeRoots": [
+			"typings"
+		],
+		"types": [
+			"svelte",
+			"@sapper",
+			"node"
+		],
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true
+	}
+}
